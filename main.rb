@@ -5,6 +5,7 @@ require 'sinatra'
 
 configure do
   set :views, ['views/layouts', 'views/pages', 'views/partials']
+  #enable :sessions
 end
 
 Dir["./app/models/*.rb"].each { |file| require file }
